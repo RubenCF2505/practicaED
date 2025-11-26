@@ -4,72 +4,80 @@ ArbolCifras::ArbolCifras()
 {
     raiz = nullptr;
 }
-ArbolCifras::ArbolCifras(nodo *n)
+ArbolCifras::ArbolCifras(set<int> numeros)
 {
-    raiz = n;
+    raiz->numeros = numeros;
+    raiz->hermano,
+        raiz->hijoIzq,
+        raiz->padre = nullptr;
 }
-void ArbolCifras::insertarNodo(nodo &n)
-{
-    if (!raiz->hijoIzq)
-    {
-        insertarIzq(raiz, n);
-    }
-    else
-    {
-        int contador = 1;
-        nodo *aux = getHrmnoDrcha(contador);
-        if (contador )
-        {
-            nodo *padre = aux->padre->hijoIzq;
-            insertarIzq(padre, n);
-        }
-        else
-        {
-            insertarDcha(aux, n);
-        }
-    }
-}
-bool ArbolCifras::comprobar(nodo &n)
-{
-    bool fin=false;
-    bool encontrado=false;
-    nodo *padre=raiz;
-    while(!encontrado||fin){
-        if(raiz->hijoIzq){}
-    }
 
-}
-ArbolCifras::nodo *ArbolCifras::getHrmnoDrcha(int &contador)
+void ArbolCifras::insertarHijo(nodo *padre, nodo &hijo)
 {
-    nodo *aux = raiz->hijoIzq;
+
+    nodo *aux = &hijo;
+    aux->padre = padre;
+    padre->hijoIzq = aux;
+}
+void ArbolCifras::insertarHmno(nodo *padre, nodo &insertar)
+{
+
+    nodo *nodoHijo = &insertar;
+    nodo *hermano = getHrmnoDrcha(padre);
+    nodoHijo->hermano = hermano;
+    nodoHijo->padre = hermano->padre;
+}
+ArbolCifras::nodo ArbolCifras::crearNodo(char signo, int operador1, int operador2, nodo padre)
+{
+
+    nodo resultado;
+    resultado.numeros = padre.numeros;
+
+    switch (signo)
+    {
+    case '+':
+        resultado.numeros.erase(operador1);
+        resultado.numeros.erase(operador2);
+        resultado.numeros.insert(operador1 + operador2);
+        break;
+
+    case '-':
+        if (operador1 - operador2 >= 0)
+        {
+            resultado.numeros.erase(operador1);
+            resultado.numeros.erase(operador2);
+            resultado.numeros.insert(operador1 - operador2);
+        }
+        break;
+    case '*':
+        resultado.numeros.erase(operador1);
+        resultado.numeros.erase(operador2);
+        resultado.numeros.insert(operador1 * operador2);
+        break;
+    case '/':
+        if (operador1 % operador2 == 0)
+        {
+            resultado.numeros.erase(operador1);
+            resultado.numeros.erase(operador2);
+            resultado.numeros.insert(operador1 / operador2);
+        }
+        break;
+    }
+    return resultado;
+}
+
+ArbolCifras::nodo *ArbolCifras::getHrmnoDrcha(nodo *padre)
+{
+    nodo *aux = padre->hijoIzq;
 
     while (aux->hermano != nullptr)
     {
         aux = aux->hermano;
-        contador++;
     }
     return aux;
 }
+
 ArbolCifras::nodo *ArbolCifras::getRaiz()
 {
     return raiz;
-}
-
-void ArbolCifras::insertarIzq(nodo *padre, nodo &hijo)
-{
-    nodo *insertar = &hijo;
-    insertar->padre = padre;
-    padre->hijoIzq = insertar;
-}
-
-void ArbolCifras::insertarDcha(nodo *hermano, nodo &hijo)
-{
-    nodo *insertar=&hijo;
-    insertar->hermano=hermano;
-    insertar->padre=hermano->padre;
-    
-}
-
-ArbolCifras::nodo *ArbolCifras::comprobarRamas()
-{
 }

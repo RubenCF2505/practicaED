@@ -1,7 +1,7 @@
 #ifndef ARBOLCIFRAS_H
 #define ARBOLCIFRAS_H
 
-#include <list>
+#include <set>
 using namespace std;
 
 class ArbolCifras
@@ -9,52 +9,24 @@ class ArbolCifras
 public:
     struct nodo
     {
-        int operador1;
-        int operador2;
-        list<int> numeros;
-        char signo;
+        set<int> numeros;
         nodo *padre;
         nodo *hijoIzq;
         nodo *hermano;
-        nodo()
-        {
-            operador1 = 0;
-            operador2 = 0;
-            signo = ' ';
-            padre = hijoIzq = hermano = nullptr;
-        }
-
-        nodo(char signo)
-        {
-            operador1 = 0;
-            operador2 = 0;
-            signo = signo;
-            padre = hijoIzq = hermano = nullptr;
-        }
-        nodo(int numero1, int numero2, char signo)
-        {
-            operador1 = numero1;
-            operador2 = numero2;
-            signo = signo;
-            padre = hijoIzq = hermano = nullptr;
-        }
     };
 
 private:
     nodo *raiz;
 
-    nodo *comprobarRamas();
-    bool comprobar(nodo &n);
-    void insertarIzq(nodo *padre, nodo &n);
-    nodo *getHrmnoDrcha(int &contador);
-    void insertarDcha(nodo *padre, nodo &hijo);
+    nodo *getHrmnoDrcha(nodo *padre);
 
 public:
     ArbolCifras();
-    ArbolCifras(nodo *nodoRaiz);
-
+    ArbolCifras(set<int> numeros);
+    nodo crearNodo(char signo,int operador1,int operador2,nodo padre);
+    void insertarHijo(nodo *padre, nodo &hijo);
+    void insertarHmno(nodo *padre, nodo &insertar);
     nodo *getRaiz();
-    void insertarNodo(nodo &n);
 };
 
 #endif

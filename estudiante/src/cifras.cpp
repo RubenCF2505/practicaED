@@ -15,6 +15,7 @@ class Cifras
     set<int> numeros;
     int numero;
     ArbolCifras soluciones;
+
 public:
     Cifras()
     {
@@ -23,16 +24,18 @@ public:
             insertarCifra();
         }
         numero = generarRandom(100, 999);
-    soluciones=calcularSoluciones();
+        soluciones = ArbolCifras(numeros);
     }
 
     int getNumero()
     {
         return numero;
     }
-    void listar(){
-        for(int element:numeros){
-            cout<<element<<endl;
+    void listar()
+    {
+        for (int element : numeros)
+        {
+            cout << element << endl;
         }
     }
 
@@ -57,11 +60,23 @@ private:
         uniform_int_distribution<int> dist(min, max);
         return dist(gen);
     }
-    ArbolCifras calcularSoluciones(){
-        
+    ArbolCifras calcularSoluciones()
+    {
+        vector<char> signos={'+','-','*','/'};
+        auto it = numeros.begin();
+        auto it2 = numeros.begin();
+        while (it != numeros.end())
+        {
+            //soluciones.insertarHijo();
+            while (it2 != numeros.end())
+            {
+                it2++;
+                
+            }
+            it++;
+        }
     }
 };
-
 
 int main()
 {
@@ -72,7 +87,5 @@ int main()
 
     juego.listar();
 
-    cout << juego.getNumero()<<endl;
-
+    cout << juego.getNumero() << endl;
 }
-
