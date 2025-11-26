@@ -36,14 +36,15 @@ public:
 private:
     nodo *raiz;
 
-   nodo* comprobarRamas();
-   bool comprobar(nodo &n);
-   void insertarIzq(nodo *padre,nodo &n);
-   nodo* getHrmnoDrcha(int &contador);
-   void insertarDcha(nodo*padre,nodo &hijo);
+    nodo *comprobarRamas();
+    bool comprobar(nodo &n);
+    void insertarIzq(nodo *padre, nodo &n);
+    nodo *getHrmnoDrcha(int &contador);
+    void insertarDcha(nodo *padre, nodo &hijo);
+
 public:
-    ArbolCifras();                
-    ArbolCifras(nodo *nodoRaiz);  
+    ArbolCifras();
+    ArbolCifras(nodo *nodoRaiz);
 
     nodo *getRaiz();
     void insertarNodo(nodo &n);
