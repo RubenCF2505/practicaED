@@ -12,7 +12,7 @@ public:
         int operador1;
         int operador2;
         list<int> numeros;
-        char operador;
+        char signo;
         nodo *padre;
         nodo *hijoIzq;
         nodo *hermano;
@@ -20,7 +20,7 @@ public:
         {
             operador1 = 0;
             operador2 = 0;
-            operador = ' ';
+            signo = ' ';
             padre = hijoIzq = hermano = nullptr;
         }
 
@@ -28,7 +28,14 @@ public:
         {
             operador1 = 0;
             operador2 = 0;
-            operador = signo;
+            signo = signo;
+            padre = hijoIzq = hermano = nullptr;
+        }
+        nodo(int numero1, int numero2, char signo)
+        {
+            operador1 = numero1;
+            operador2 = numero2;
+            signo = signo;
             padre = hijoIzq = hermano = nullptr;
         }
     };

@@ -23,6 +23,7 @@ public:
             insertarCifra();
         }
         numero = generarRandom(100, 999);
+    soluciones=calcularSoluciones();
     }
 
     int getNumero()
@@ -56,7 +57,11 @@ private:
         uniform_int_distribution<int> dist(min, max);
         return dist(gen);
     }
+    ArbolCifras calcularSoluciones(){
+        
+    }
 };
+
 
 int main()
 {

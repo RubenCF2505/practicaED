@@ -16,9 +16,9 @@ void ArbolCifras::insertarNodo(nodo &n)
     }
     else
     {
-        int contador = 0;
+        int contador = 1;
         nodo *aux = getHrmnoDrcha(contador);
-        if (contador == 6)
+        if (contador )
         {
             nodo *padre = aux->padre->hijoIzq;
             insertarIzq(padre, n);
@@ -31,6 +31,13 @@ void ArbolCifras::insertarNodo(nodo &n)
 }
 bool ArbolCifras::comprobar(nodo &n)
 {
+    bool fin=false;
+    bool encontrado=false;
+    nodo *padre=raiz;
+    while(!encontrado||fin){
+        if(raiz->hijoIzq){}
+    }
+
 }
 ArbolCifras::nodo *ArbolCifras::getHrmnoDrcha(int &contador)
 {
@@ -50,11 +57,17 @@ ArbolCifras::nodo *ArbolCifras::getRaiz()
 
 void ArbolCifras::insertarIzq(nodo *padre, nodo &hijo)
 {
-    
+    nodo *insertar = &hijo;
+    insertar->padre = padre;
+    padre->hijoIzq = insertar;
 }
 
-void ArbolCifras::insertarDcha(nodo *padre, nodo &hijo)
+void ArbolCifras::insertarDcha(nodo *hermano, nodo &hijo)
 {
+    nodo *insertar=&hijo;
+    insertar->hermano=hermano;
+    insertar->padre=hermano->padre;
+    
 }
 
 ArbolCifras::nodo *ArbolCifras::comprobarRamas()
