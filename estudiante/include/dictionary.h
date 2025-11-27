@@ -8,9 +8,10 @@
 
 using namespace std;
 
-class Dictionary {
+class Dictionary 
+{
 private:
-  set<string> words;
+  set<string> palabras;
 
 public:
   /**
@@ -23,7 +24,7 @@ public:
   /**
    * @brief Destructor
    */
-  ~Dictionary(){}
+  ~Dictionary(){};
 
   /**
    *  @brief Limpia el Dictionary
@@ -43,12 +44,12 @@ public:
    * @brief Comprueba si el diccionario está vacio.
    * @return true si el diccionario está vacío, false en caso contrario
    */
-  bool empty() const { return words.size() == 0; }
+  bool empty() const;
 
   /**
    * @brief Indica si una palabra esta en el diccionario o no.
    * Este método comprueba si una determinada palabra se encuentra o no en el diccionario
-   * @param palabra: la palabra que se quiere buscar.
+   * @param val: la palabra que se quiere buscar.
    * @return Booleano indicando si la palabra existe o no en el diccionario
    */
   bool exists(const string &val);
@@ -107,6 +108,16 @@ public:
     set<string>::iterator it;
 
   public:
+    iterator() = default;
+    iterator(const set<string>::iterator &other) : it(other) {}
+    iterator(const iterator &other) : it(other.it) {}   // constructor de copia
+    
+    const string &operator*() const { return *it; }
+    iterator &operator++() { ++it; return *this; }
+
+    bool operator==(const iterator &other) const { return it == other.it; }
+    bool operator!=(const iterator &other) const { return it != other.it; }
+
     friend class Dictionary;
   };
 
@@ -118,6 +129,15 @@ public:
     set<string>::const_iterator it;
 
   public:
+    const_iterator() = default;
+    const_iterator(const set<string>::const_iterator &other) : it(other) {}
+
+    const string &operator*() const { return *it; }
+    const_iterator &operator++() { ++it; return *this; }
+
+    bool operator==(const const_iterator &other) const { return it == other.it; }
+    bool operator!=(const const_iterator &other) const { return it != other.it; }
+    
     friend class Dictionary;
   };
 
