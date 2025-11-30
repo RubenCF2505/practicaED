@@ -471,6 +471,7 @@ CMakeFiles/letras.dir/src/letters_bag.cpp.o: src/letters_bag.cpp \
   /usr/include/c++/13/clocale \
   /usr/include/c++/13/cstdio \
   /usr/include/c++/13/cstdlib \
+  /usr/include/c++/13/ctime \
   /usr/include/c++/13/cwchar \
   /usr/include/c++/13/cwctype \
   /usr/include/c++/13/debug/assertions.h \
@@ -987,6 +988,8 @@ CMakeFiles/letras.dir/src/solver.cpp.o: src/solver.cpp \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h
 
+
+/usr/include/c++/13/ctime:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/c++io.h:
 

@@ -9,17 +9,19 @@
 using namespace std;
 
 
-class LettersBag {
+class LettersBag 
+{
 private:
     vector<char> letters;
 public:
+    LettersBag(){};
     LettersBag(const LettersSet &letterSet);
 
-    int size();
+    int size() const;
     void insert(char c);
     void erase(char c);
     void clear();
-    bool empty();
+    bool empty() const;
 
     char extractLetter();
     vector<char> extractLetter(int num);

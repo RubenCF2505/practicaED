@@ -6,7 +6,8 @@
 
 using namespace std;
 
-struct LetterInfo{
+struct LetterInfo
+{
   unsigned int repetitions;
   unsigned int score;
 
@@ -25,7 +26,8 @@ struct LetterInfo{
 };
 
 
-class LettersSet{
+class LettersSet
+{
 private:
   map<char, LetterInfo> charSet;
 
@@ -73,6 +75,15 @@ public:
     const_iterator() = default;
     const_iterator(const map<char, LetterInfo>::const_iterator &other) : it(other) {}
     const_iterator(const const_iterator &other) : it(other.it) {}
+
+    const pair<const char, LetterInfo> &operator*() const { return *it; }
+
+    const_iterator &operator++() { ++it; return *this; }
+
+    bool operator==(const const_iterator &other) const { return it == other.it; }
+    bool operator!=(const const_iterator &other) const { return it != other.it; }
+    
+    friend class LettersSet;
   };
 
   iterator find(char c);
