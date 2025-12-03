@@ -2,22 +2,24 @@
 #include <iostream>
 #include <vector>
 #include <set>
-#include <cmath>
-#include <climits>
 #include <list>
 #include <random>
+#include "../include/arbolCifras.h"
 
 using namespace std;
 const int SIZE = 6;
+
 class Cifras
 {
     list<int> bolsa = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 25, 50, 75, 100};
-    set<int> numeros;
+    multiset<int> numeros;
     int numero;
+    ArbolCifras soluciones;
 
 public:
     Cifras()
     {
+
         for (int i = 0; i < SIZE; i++)
         {
             insertarCifra();
@@ -25,31 +27,70 @@ public:
         numero = generarRandom(100, 999);
     }
 
-    int getNumero()
+    int getNumero() { return numero; }
+
+    void listar()
     {
-        return numero;
+        cout << "Números elegidos:" << endl;
+        for (int n : numeros)
+            cout << n << " ";
+        cout << endl;
     }
-    void listar(){
-        for(int element:numeros){
-            cout<<element<<endl;
+
+    bool buscarSolucion(int objetivo)
+    {
+        for (ArbolCifras::nodo *n : soluciones.getSoluciones())
+            if (n->etiqueta == objetivo)
+                return true;
+        return false;
+    }
+
+    int buscarSolucionCercana(int objetivo)
+    {
+        const auto &hojas = soluciones.getSoluciones();
+        if (hojas.empty())
+            return -1;
+
+        int solucionCercana = hojas.front()->etiqueta;
+        int diffMin = abs(solucionCercana - objetivo);
+
+        for (auto n : hojas)
+        {
+            int diff = abs(n->etiqueta - objetivo);
+            if (diff < diffMin)
+            {
+                diffMin = diff;
+                solucionCercana = n->etiqueta;
+            }
         }
+        return solucionCercana;
+    }
+
+    void obtenerCamino(int numero)
+    {
+        string camino = soluciones.mostrarSolucion(numero);
+        cout << "Camino para \n"
+             << numero << ": " << camino << endl;
+    }
+    void generarSoluciones()
+    {
+        soluciones = ArbolCifras(numeros);
+    }
+
+    bool comprobarSolucionMagica()
+    {
+        return soluciones.combinacionMagica();
     }
 
 private:
     void insertarCifra()
     {
-
         auto it = bolsa.begin();
-        int contador = 0;
-        int aleatorio = generarRandom(0, bolsa.size());
-
-        while (contador < aleatorio)
-        {
-            it++;
-            contador++;
-        }
+        int aleatorio = generarRandom(0, bolsa.size() - 1);
+        advance(it, aleatorio);
         numeros.insert(*it);
     }
+
     int generarRandom(int min, int max)
     {
         random_device rd;
@@ -61,18 +102,24 @@ private:
 
 int main()
 {
-    srand(time(NULL));
-
-    cout << "JUEGO DE LAS CIFRAS" << endl;
     Cifras juego;
-
     juego.listar();
+    cout << "Número objetivo: " << juego.getNumero() << endl;
+    cout << endl
+         << "voy a calcular todas las soluciones..." << endl;
 
-    cout << juego.getNumero()<<endl;
-
-}
-
-int main(int argc, char *argv[])
-{
-    //
+    juego.generarSoluciones();
+    if (juego.comprobarSolucionMagica())
+        cout << "!Se trata de una combinación mágica!" << endl;
+    if (juego.buscarSolucion(juego.getNumero()))
+    {
+        cout << "¡Solución encontrada!" << endl;
+        juego.obtenerCamino(juego.getNumero());
+    }
+    else
+    {
+        int cercana = juego.buscarSolucionCercana(juego.getNumero());
+        cout << "La solución más cercana es: " << cercana << endl;
+        juego.obtenerCamino(cercana);
+    }
 }
