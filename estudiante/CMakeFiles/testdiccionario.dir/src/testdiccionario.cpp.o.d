@@ -1,5 +1,5 @@
 CMakeFiles/testdiccionario.dir/src/testdiccionario.cpp.o: \
- /mnt/c/Users/inten/Desktop/Uni/Asignaturas/Anio-Redemption/ED/practicas/PF/estudiante/src/testdiccionario.cpp \
+ /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/src/testdiccionario.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/13/fstream \
  /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
@@ -148,7 +148,7 @@ CMakeFiles/testdiccionario.dir/src/testdiccionario.cpp.o: \
  /usr/include/x86_64-linux-gnu/c++/13/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++io.h \
  /usr/include/c++/13/bits/fstream.tcc /usr/include/c++/13/iostream \
- /mnt/c/Users/inten/Desktop/Uni/Asignaturas/Anio-Redemption/ED/practicas/PF/estudiante/./include/dictionary.h \
+ /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/./include/dictionary.h \
  /usr/include/c++/13/set /usr/include/c++/13/bits/stl_tree.h \
  /usr/include/c++/13/ext/aligned_buffer.h \
  /usr/include/c++/13/bits/stl_set.h \

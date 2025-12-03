@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/mnt/c/Users/inten/Desktop/Uni/Asignaturas/Anio-Redemption/ED/practicas/PF/estudiante/src/dictionary.cpp" "CMakeFiles/testdiccionario.dir/src/dictionary.cpp.o" "gcc" "CMakeFiles/testdiccionario.dir/src/dictionary.cpp.o.d"
-  "/mnt/c/Users/inten/Desktop/Uni/Asignaturas/Anio-Redemption/ED/practicas/PF/estudiante/src/testdiccionario.cpp" "CMakeFiles/testdiccionario.dir/src/testdiccionario.cpp.o" "gcc" "CMakeFiles/testdiccionario.dir/src/testdiccionario.cpp.o.d"
+  "/mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/src/dictionary.cpp" "CMakeFiles/testdiccionario.dir/src/dictionary.cpp.o" "gcc" "CMakeFiles/testdiccionario.dir/src/dictionary.cpp.o.d"
+  "/mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/src/testdiccionario.cpp" "CMakeFiles/testdiccionario.dir/src/testdiccionario.cpp.o" "gcc" "CMakeFiles/testdiccionario.dir/src/testdiccionario.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

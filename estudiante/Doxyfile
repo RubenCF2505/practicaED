@@ -1,6 +1,6 @@
 PROJECT_NAME           = "Práctica Final.-Cifras y Letras "
-OUTPUT_DIRECTORY       = /mnt/c/Users/inten/Desktop/Uni/Asignaturas/Anio-Redemption/ED/practicas/PF/estudiante/doc_doxygen/
-INPUT                  = /mnt/c/Users/inten/Desktop/Uni/Asignaturas/Anio-Redemption/ED/practicas/PF/estudiante/.//include /mnt/c/Users/inten/Desktop/Uni/Asignaturas/Anio-Redemption/ED/practicas/PF/estudiante/.//src /mnt/c/Users/inten/Desktop/Uni/Asignaturas/Anio-Redemption/ED/practicas/PF/estudiante/.//doc
+OUTPUT_DIRECTORY       = /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/doc_doxygen/
+INPUT                  = /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/.//include /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/.//src /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/.//doc
 GENERATE_LATEX         = NO
-IMAGE_PATH             = /mnt/c/Users/inten/Desktop/Uni/Asignaturas/Anio-Redemption/ED/practicas/PF/estudiante/.//doc
+IMAGE_PATH             = /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/.//doc
 EXTRACT_PRIVATE	       = NO

@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/mnt/c/Users/inten/Desktop/Uni/Asignaturas/Anio-Redemption/ED/practicas/PF/estudiante/./include
+CXX_INCLUDES = -I/mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/./include
 
 CXX_FLAGS = -std=gnu++14
 
