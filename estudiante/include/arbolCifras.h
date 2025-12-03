@@ -17,8 +17,8 @@ public:
         char signo = ' ';
         string expresion;
         multiset<int> numeros;
-        vector<nodo*> hijos;
-        nodo* padre = nullptr;
+        vector<nodo *> hijos;
+        nodo *padre = nullptr;
         nodo() {}
     };
 
@@ -26,17 +26,15 @@ public:
     ArbolCifras(multiset<int> numeros);
     void generarSolucion(nodo *actual);
     int operar(int operador1, int operador2, char signo);
-    vector<nodo*>& getSoluciones();
-    string obtenerCamino(int objetivo);
-
+    vector<nodo *> &getSoluciones();
+    string mostrarSolucion(int numero);
+    bool combinacionMagica();
 private:
-    bool obtenerCamino(nodo *hoja, string &solucion);
-    nodo* crearNodo(nodo* padre, int operador1, int operador2, char signo, multiset<int> numeros);
-    nodo* buscarNodo(nodo* actual, int objetivo);
+    nodo *crearNodo(nodo *padre, int operador1, int operador2, char signo, multiset<int> numeros);
 
-    nodo* raiz;
+    nodo *raiz;
     set<int> hojas;
-    vector<nodo*> soluciones;
+    vector<nodo *> soluciones;
 };
 
 #endif

@@ -18,10 +18,12 @@ class Cifras
 public:
     Cifras()
     {
+
         for (int i = 0; i < SIZE; i++)
+        {
             insertarCifra();
+        }
         numero = generarRandom(100, 999);
-        soluciones = ArbolCifras(numeros);
     }
 
     int getNumero() { return numero; }
@@ -65,8 +67,18 @@ public:
 
     void obtenerCamino(int numero)
     {
-        string camino = soluciones.obtenerCamino(numero);
-        cout << "Camino para " << numero << ": " << camino << endl;
+        string camino = soluciones.mostrarSolucion(numero);
+        cout << "Camino para \n"
+             << numero << ": " << camino << endl;
+    }
+    void generarSoluciones()
+    {
+        soluciones = ArbolCifras(numeros);
+    }
+
+    bool comprobarSolucionMagica()
+    {
+        return soluciones.combinacionMagica();
     }
 
 private:
@@ -90,11 +102,14 @@ private:
 int main()
 {
     Cifras juego;
-
     juego.listar();
-
     cout << "Número objetivo: " << juego.getNumero() << endl;
+    cout << endl
+         << "voy a calcular todas las soluciones..." << endl;
 
+    juego.generarSoluciones();
+    if (juego.comprobarSolucionMagica())
+        cout << "!Se trata de una combinación mágica!" << endl;
     if (juego.buscarSolucion(juego.getNumero()))
     {
         cout << "¡Solución encontrada!" << endl;
