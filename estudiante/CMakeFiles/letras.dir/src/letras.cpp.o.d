@@ -167,4 +167,9 @@ CMakeFiles/letras.dir/src/letras.cpp.o: \
  /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/./include/letters_set.h \
  /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/./include/solver.h \
  /usr/include/c++/13/utility /usr/include/c++/13/bits/stl_relops.h \
+ /usr/include/c++/13/algorithm /usr/include/c++/13/bits/stl_algo.h \
+ /usr/include/c++/13/bits/algorithmfwd.h \
+ /usr/include/c++/13/bits/stl_heap.h \
+ /usr/include/c++/13/bits/uniform_int_dist.h \
+ /usr/include/c++/13/bits/stl_tempbuf.h \
  /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/./include/dictionary.h
