@@ -26,7 +26,6 @@ public:
         }
 
         numero = generarRandom(100, 999);
-        numero=101;
     }
 
     int getNumero() { return numero; }
