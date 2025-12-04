@@ -23,8 +23,8 @@ public:
     };
 
     ArbolCifras();
-    ArbolCifras(multiset<int> numeros);
-    void generarSolucion(nodo *actual);
+    ArbolCifras(multiset<int> numeros, int objetivo);
+    void generarSolucion(nodo *actual, int objetivo);
     int operar(int operador1, int operador2, char signo);
     vector<nodo *> &getSoluciones();
     string mostrarSolucion(int numero);

@@ -19,11 +19,14 @@ public:
     Cifras()
     {
 
-        for (int i = 0; i < SIZE; i++)
+        /*for (int i = 0; i < SIZE; i++)
         {
             insertarCifra();
-        }
-        numero = generarRandom(100, 999);
+        }*/
+        numeros = {1, 2, 3, 4, 5, 100};
+
+        //numero = generarRandom(100, 999);
+        numero=101;
     }
 
     int getNumero() { return numero; }
@@ -73,7 +76,7 @@ public:
     }
     void generarSoluciones()
     {
-        soluciones = ArbolCifras(numeros);
+        soluciones = ArbolCifras(numeros, numero);
     }
 
     bool comprobarSolucionMagica()

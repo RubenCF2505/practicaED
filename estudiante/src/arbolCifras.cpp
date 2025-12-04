@@ -7,7 +7,7 @@ ArbolCifras::ArbolCifras()
     raiz->etiqueta = 0;
 }
 
-ArbolCifras::ArbolCifras(multiset<int> numeros)
+ArbolCifras::ArbolCifras(multiset<int> numeros, int objetivo)
 {
     raiz = new nodo;
     raiz->etiqueta = 0;
@@ -21,7 +21,7 @@ ArbolCifras::ArbolCifras(multiset<int> numeros)
         raiz->hijos.push_back(nodoHijo);
     }
 
-    generarSolucion(raiz);
+    generarSolucion(raiz, objetivo);
 }
 
 bool comprobarOperacion(int operador1, int operador2, char signo)
@@ -38,57 +38,60 @@ bool comprobarOperacion(int operador1, int operador2, char signo)
 
     if (operador2 == 1 && signo == '/')
         valida = false;
+    if ((signo == '+' || signo == '*') && operador1 > operador2)
+        valida = false;
 
     return valida;
 }
 
 bool ArbolCifras::combinacionMagica()
 {
-    return soluciones.size()==900;
+    return soluciones.size() == 900;
 }
 
-void ArbolCifras::generarSolucion(nodo *actual)
+void ArbolCifras::generarSolucion(nodo *actual, int objetivo)
 {
     vector<char> signos = {'+', '-', '*', '/'};
     multiset<int> numeros = actual->numeros;
-
-    if (numeros.size() > 1)
+    if (actual->etiqueta != objetivo)
     {
-        auto it1 = numeros.begin();
-        while (it1 != numeros.end())
+
+        if (numeros.size() > 1)
         {
-            auto it2 = numeros.begin();
-            while (it2 != numeros.end())
+            auto it1 = numeros.begin();
+            while (it1 != numeros.end())
             {
-                if (it1 != it2)
+                auto it2 = numeros.begin();
+                while (it2 != numeros.end())
                 {
-                    for (char signo : signos)
+                    if (it1 != it2)
                     {
-                        if (comprobarOperacion(*it1, *it2, signo))
+                        for (char signo : signos)
                         {
-                            nodo *hijo = crearNodo(actual, *it1, *it2, signo, numeros);
-                            if (!hijo) { ++it2; continue; }
-
-                            actual->hijos.push_back(hijo);
-
-                            if (hijo->etiqueta >= 100 && hijo->etiqueta <= 999)
+                            if (comprobarOperacion(*it1, *it2, signo))
                             {
-                                if (hojas.find(hijo->etiqueta) == hojas.end())
-                                {
-                                    hojas.insert(hijo->etiqueta);
-                                    soluciones.push_back(hijo);
-                                }
-                            }
+                                nodo *hijo = crearNodo(actual, *it1, *it2, signo, numeros);
 
-                            generarSolucion(hijo);
+                                actual->hijos.push_back(hijo);
+
+                                if (hijo->etiqueta >= 100 && hijo->etiqueta <= 999)
+                                {
+                                    if (hojas.find(hijo->etiqueta) == hojas.end())
+                                    {
+                                        hojas.insert(hijo->etiqueta);
+                                        soluciones.push_back(hijo);
+                                    }
+                                }
+                                generarSolucion(hijo, objetivo);
+                            }
                         }
                     }
+
+                    ++it2;
                 }
 
-                ++it2;
+                ++it1;
             }
-
-            ++it1;
         }
     }
 }
