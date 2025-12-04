@@ -129,7 +129,6 @@ ArbolCifras::nodo *ArbolCifras::crearNodo(nodo *padre, int operador1, int operad
 
     nodo *nuevo = new nodo;
     nuevo->etiqueta = nuevoValor;
-    nuevo->signo = signo;
     nuevo->numeros = numerosPadre;
     nuevo->padre = padre;
     nuevo->expresion = to_string(operador1) + " " + signo + " " + to_string(operador2);

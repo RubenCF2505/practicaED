@@ -14,7 +14,6 @@ public:
     struct nodo
     {
         int etiqueta = 0;
-        char signo = ' ';
         string expresion;
         multiset<int> numeros;
         vector<nodo *> hijos;
