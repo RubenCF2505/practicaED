@@ -35,6 +35,7 @@ void LettersBag::erase(char c)
             letters.erase(it);
             encontrado = true;
         }
+        ++it;
     }
 }
 
@@ -53,7 +54,7 @@ bool LettersBag::empty() const
 char LettersBag::extractLetter()
 {
     if (letters.empty()) return '\0';
-
+    
     int pos = rand() % letters.size();
     char c = letters[pos];
 
@@ -68,7 +69,10 @@ vector<char> LettersBag::extractLetter(int num)
     int count = 0;
 
     while(count != num && !letters.empty())
+    {
         aux.push_back(extractLetter());
+        count++;
+    }
 
     return aux;
 }
