@@ -20,13 +20,12 @@ public:
     Cifras()
     {
 
-        /*for (int i = 0; i < SIZE; i++)
+        for (int i = 0; i < SIZE; i++)
         {
             insertarCifra();
-        }*/
-        numeros = {1, 2, 3, 4, 5, 100};
+        }
 
-        //numero = generarRandom(100, 999);
+        numero = generarRandom(100, 999);
         numero=101;
     }
 
