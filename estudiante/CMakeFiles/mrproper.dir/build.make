@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Users/inten/Desktop/Uni/Asignaturas/Anio-Redemption/ED/practicas/PF/estudiante
+CMAKE_SOURCE_DIR = /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Users/inten/Desktop/Uni/Asignaturas/Anio-Redemption/ED/practicas/PF/estudiante
+CMAKE_BINARY_DIR = /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante
 
 # Utility rule file for mrproper.
 
@@ -67,8 +67,8 @@ include CMakeFiles/mrproper.dir/compiler_depend.make
 include CMakeFiles/mrproper.dir/progress.make
 
 CMakeFiles/mrproper:
-	/usr/bin/cmake -E remove_directory /mnt/c/Users/inten/Desktop/Uni/Asignaturas/Anio-Redemption/ED/practicas/PF/estudiante/zip
-	/usr/bin/cmake -E remove_directory /mnt/c/Users/inten/Desktop/Uni/Asignaturas/Anio-Redemption/ED/practicas/PF/estudiante/bin
+	/usr/bin/cmake -E remove_directory /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/zip
+	/usr/bin/cmake -E remove_directory /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/bin
 	/usr/bin/cmake -E remove_directory CMakeFiles
 	/usr/bin/cmake -E remove CMakeCache.txt
 	/usr/bin/cmake -E remove CMakeDoxyfile.in
@@ -90,6 +90,6 @@ CMakeFiles/mrproper.dir/clean:
 .PHONY : CMakeFiles/mrproper.dir/clean
 
 CMakeFiles/mrproper.dir/depend:
-	cd /mnt/c/Users/inten/Desktop/Uni/Asignaturas/Anio-Redemption/ED/practicas/PF/estudiante && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/Users/inten/Desktop/Uni/Asignaturas/Anio-Redemption/ED/practicas/PF/estudiante /mnt/c/Users/inten/Desktop/Uni/Asignaturas/Anio-Redemption/ED/practicas/PF/estudiante /mnt/c/Users/inten/Desktop/Uni/Asignaturas/Anio-Redemption/ED/practicas/PF/estudiante /mnt/c/Users/inten/Desktop/Uni/Asignaturas/Anio-Redemption/ED/practicas/PF/estudiante /mnt/c/Users/inten/Desktop/Uni/Asignaturas/Anio-Redemption/ED/practicas/PF/estudiante/CMakeFiles/mrproper.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/CMakeFiles/mrproper.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/mrproper.dir/depend
 

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Users/inten/Desktop/Uni/Asignaturas/Anio-Redemption/ED/practicas/PF/estudiante
+CMAKE_SOURCE_DIR = /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Users/inten/Desktop/Uni/Asignaturas/Anio-Redemption/ED/practicas/PF/estudiante
+CMAKE_BINARY_DIR = /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante
 
 # Utility rule file for zip.
 
@@ -67,9 +67,9 @@ include CMakeFiles/zip.dir/compiler_depend.make
 include CMakeFiles/zip.dir/progress.make
 
 CMakeFiles/zip:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/mnt/c/Users/inten/Desktop/Uni/Asignaturas/Anio-Redemption/ED/practicas/PF/estudiante/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating zip"
-	/usr/bin/cmake -E make_directory /mnt/c/Users/inten/Desktop/Uni/Asignaturas/Anio-Redemption/ED/practicas/PF/estudiante/zip
-	/usr/bin/cmake -E tar cvf /mnt/c/Users/inten/Desktop/Uni/Asignaturas/Anio-Redemption/ED/practicas/PF/estudiante/zip/.zip --format=zip ./README ./CMakeLists.txt ./include ./src ./datos ./doc ./Doxyfile.in
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating zip"
+	/usr/bin/cmake -E make_directory /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/zip
+	/usr/bin/cmake -E tar cvf /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/zip/.zip --format=zip ./README ./CMakeLists.txt ./include ./src ./datos ./doc ./Doxyfile.in
 
 zip: CMakeFiles/zip
 zip: CMakeFiles/zip.dir/build.make
@@ -84,6 +84,6 @@ CMakeFiles/zip.dir/clean:
 .PHONY : CMakeFiles/zip.dir/clean
 
 CMakeFiles/zip.dir/depend:
-	cd /mnt/c/Users/inten/Desktop/Uni/Asignaturas/Anio-Redemption/ED/practicas/PF/estudiante && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/Users/inten/Desktop/Uni/Asignaturas/Anio-Redemption/ED/practicas/PF/estudiante /mnt/c/Users/inten/Desktop/Uni/Asignaturas/Anio-Redemption/ED/practicas/PF/estudiante /mnt/c/Users/inten/Desktop/Uni/Asignaturas/Anio-Redemption/ED/practicas/PF/estudiante /mnt/c/Users/inten/Desktop/Uni/Asignaturas/Anio-Redemption/ED/practicas/PF/estudiante /mnt/c/Users/inten/Desktop/Uni/Asignaturas/Anio-Redemption/ED/practicas/PF/estudiante/CMakeFiles/zip.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/CMakeFiles/zip.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/zip.dir/depend
 

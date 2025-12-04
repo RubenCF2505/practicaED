@@ -38,16 +38,16 @@ int main(int argc, char *argv[])
         cout<<*it<<endl;
   }
 
-  //Borando una palabra
+  //Borrando una palabra
   string w = "zurrusco";
   if (diccionario.erase(w)){
-    cout<<"Palabra borrada "<<diccionario.size()<<endl;
+    cout<<"Palabra borrada (size : "<<diccionario.size() << ")." <<endl;
   }
   else
     cout<<"Palabra no borrada "<<diccionario.size()<<endl;
 
   int longitud;
-  cout<<"Dime la longitud de las palabras que  quieres ver";
+  cout<<"Dime la longitud de las palabras que quieres ver: ";
   cin>>longitud;
   vector<string> v=diccionario.getWordsLength(longitud);
   for (int i=0;i<v.size();i++)

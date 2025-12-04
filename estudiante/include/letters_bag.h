@@ -9,9 +9,22 @@
 using namespace std;
 
 
-class LettersBag {
+class LettersBag 
+{
 private:
- //A completar
+    vector<char> letters;
+public:
+    LettersBag(){};
+    LettersBag(const LettersSet &letterSet);
+
+    int size() const;
+    void insert(char c);
+    void erase(char c);
+    void clear();
+    bool empty() const;
+
+    char extractLetter();
+    vector<char> extractLetter(int num);
 };
 
 #endif
