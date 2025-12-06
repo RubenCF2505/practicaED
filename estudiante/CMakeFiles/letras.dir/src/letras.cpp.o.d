@@ -1,5 +1,5 @@
 CMakeFiles/letras.dir/src/letras.cpp.o: \
- /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/src/letras.cpp \
+ /home/ruben/Documentos/ugr/prácticas\ ED/practicaFinal/estudiante/src/letras.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/13/iostream \
  /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
@@ -153,23 +153,23 @@ CMakeFiles/letras.dir/src/letras.cpp.o: \
  /usr/include/c++/13/bits/stl_vector.h \
  /usr/include/c++/13/bits/stl_bvector.h \
  /usr/include/c++/13/bits/vector.tcc \
- /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/./include/dictionary.h \
+ /home/ruben/Documentos/ugr/prácticas\ ED/practicaFinal/estudiante/./include/dictionary.h \
  /usr/include/c++/13/set /usr/include/c++/13/bits/stl_tree.h \
  /usr/include/c++/13/ext/aligned_buffer.h \
  /usr/include/c++/13/bits/stl_set.h \
  /usr/include/c++/13/bits/stl_multiset.h \
  /usr/include/c++/13/bits/erase_if.h \
- /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/./include/letters_bag.h \
- /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/./include/letters_set.h \
+ /home/ruben/Documentos/ugr/prácticas\ ED/practicaFinal/estudiante/./include/letters_bag.h \
+ /home/ruben/Documentos/ugr/prácticas\ ED/practicaFinal/estudiante/./include/letters_set.h \
  /usr/include/c++/13/map /usr/include/c++/13/bits/stl_map.h \
  /usr/include/c++/13/tuple /usr/include/c++/13/bits/uses_allocator.h \
  /usr/include/c++/13/bits/stl_multimap.h /usr/include/c++/13/stdlib.h \
- /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/./include/letters_set.h \
- /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/./include/solver.h \
+ /home/ruben/Documentos/ugr/prácticas\ ED/practicaFinal/estudiante/./include/letters_set.h \
+ /home/ruben/Documentos/ugr/prácticas\ ED/practicaFinal/estudiante/./include/solver.h \
  /usr/include/c++/13/utility /usr/include/c++/13/bits/stl_relops.h \
  /usr/include/c++/13/algorithm /usr/include/c++/13/bits/stl_algo.h \
  /usr/include/c++/13/bits/algorithmfwd.h \
  /usr/include/c++/13/bits/stl_heap.h \
  /usr/include/c++/13/bits/uniform_int_dist.h \
  /usr/include/c++/13/bits/stl_tempbuf.h \
- /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/./include/dictionary.h
+ /home/ruben/Documentos/ugr/prácticas\ ED/practicaFinal/estudiante/./include/dictionary.h

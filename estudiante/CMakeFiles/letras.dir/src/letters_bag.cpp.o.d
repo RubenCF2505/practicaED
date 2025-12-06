@@ -1,8 +1,8 @@
 CMakeFiles/letras.dir/src/letters_bag.cpp.o: \
- /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/src/letters_bag.cpp \
+ /home/ruben/Documentos/ugr/prácticas\ ED/practicaFinal/estudiante/src/letters_bag.cpp \
  /usr/include/stdc-predef.h \
- /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/./include/letters_bag.h \
- /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/./include/letters_set.h \
+ /home/ruben/Documentos/ugr/prácticas\ ED/practicaFinal/estudiante/./include/letters_bag.h \
+ /home/ruben/Documentos/ugr/prácticas\ ED/practicaFinal/estudiante/./include/letters_set.h \
  /usr/include/c++/13/iostream /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \

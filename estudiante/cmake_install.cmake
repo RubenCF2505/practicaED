@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante
+# Install script for directory: /home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

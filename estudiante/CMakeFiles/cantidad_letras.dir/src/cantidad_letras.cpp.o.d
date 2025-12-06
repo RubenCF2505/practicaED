@@ -1,5 +1,5 @@
 CMakeFiles/cantidad_letras.dir/src/cantidad_letras.cpp.o: \
- /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/src/cantidad_letras.cpp \
+ /home/ruben/Documentos/ugr/prácticas\ ED/practicaFinal/estudiante/src/cantidad_letras.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/13/fstream \
  /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
@@ -158,7 +158,7 @@ CMakeFiles/cantidad_letras.dir/src/cantidad_letras.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
- /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/./include/dictionary.h \
+ /home/ruben/Documentos/ugr/prácticas\ ED/practicaFinal/estudiante/./include/dictionary.h \
  /usr/include/c++/13/set /usr/include/c++/13/bits/stl_tree.h \
  /usr/include/c++/13/ext/aligned_buffer.h \
  /usr/include/c++/13/bits/stl_set.h \
@@ -168,7 +168,7 @@ CMakeFiles/cantidad_letras.dir/src/cantidad_letras.cpp.o: \
  /usr/include/c++/13/bits/stl_vector.h \
  /usr/include/c++/13/bits/stl_bvector.h \
  /usr/include/c++/13/bits/vector.tcc \
- /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/./include/letters_set.h \
+ /home/ruben/Documentos/ugr/prácticas\ ED/practicaFinal/estudiante/./include/letters_set.h \
  /usr/include/c++/13/map /usr/include/c++/13/bits/stl_map.h \
  /usr/include/c++/13/tuple /usr/include/c++/13/bits/uses_allocator.h \
  /usr/include/c++/13/bits/stl_multimap.h

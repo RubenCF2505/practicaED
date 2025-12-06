@@ -48,20 +48,17 @@ public:
 
     int buscarSolucionCercana(int objetivo)
     {
-        const auto &hojas = soluciones.getSoluciones();
-        if (hojas.empty())
-            return -1;
+        
+        int solucionCercana = soluciones.getSoluciones().front()->etiqueta;
+        int restoActual = solucionCercana - objetivo >= 0 ? solucionCercana - objetivo : objetivo - solucionCercana;
 
-        int solucionCercana = hojas.front()->etiqueta;
-        int diffMin = abs(solucionCercana - objetivo);
-
-        for (auto n : hojas)
+        for (ArbolCifras::nodo *nodo : soluciones.getSoluciones())
         {
-            int diff = abs(n->etiqueta - objetivo);
-            if (diff < diffMin)
+            int restoNuevo = nodo->etiqueta - objetivo >= 0 ? nodo->etiqueta - objetivo : objetivo - nodo->etiqueta;
+            if (restoNuevo < restoActual)
             {
-                diffMin = diff;
-                solucionCercana = n->etiqueta;
+                restoActual = restoNuevo;
+                solucionCercana = nodo->etiqueta;
             }
         }
         return solucionCercana;
@@ -70,8 +67,9 @@ public:
     void obtenerCamino(int numero)
     {
         string camino = soluciones.mostrarSolucion(numero);
-        cout << "Camino para \n"
-             << numero << ": " << camino << endl;
+        cout << "Camino para "
+             << numero << ": " << "\n"
+             << camino << endl;
     }
     void generarSoluciones()
     {
@@ -88,7 +86,12 @@ private:
     {
         auto it = bolsa.begin();
         int aleatorio = generarRandom(0, bolsa.size() - 1);
-        advance(it, aleatorio);
+        int contador = 0;
+        while (contador < aleatorio)
+        {
+            it++;
+            contador++;
+        }
         numeros.insert(*it);
     }
 
@@ -107,7 +110,7 @@ int main()
     juego.listar();
     cout << "Número objetivo: " << juego.getNumero() << endl;
     cout << endl
-         << "voy a calcular todas las soluciones..." << endl;
+         << "voy a calcular la solucion..." << endl;
 
     juego.generarSoluciones();
     if (juego.comprobarSolucionMagica())

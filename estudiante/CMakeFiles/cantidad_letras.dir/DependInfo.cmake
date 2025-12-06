@@ -8,9 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/src/cantidad_letras.cpp" "CMakeFiles/cantidad_letras.dir/src/cantidad_letras.cpp.o" "gcc" "CMakeFiles/cantidad_letras.dir/src/cantidad_letras.cpp.o.d"
-  "/mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/src/dictionary.cpp" "CMakeFiles/cantidad_letras.dir/src/dictionary.cpp.o" "gcc" "CMakeFiles/cantidad_letras.dir/src/dictionary.cpp.o.d"
-  "/mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/src/letters_set.cpp" "CMakeFiles/cantidad_letras.dir/src/letters_set.cpp.o" "gcc" "CMakeFiles/cantidad_letras.dir/src/letters_set.cpp.o.d"
+  "/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante/src/cantidad_letras.cpp" "CMakeFiles/cantidad_letras.dir/src/cantidad_letras.cpp.o" "gcc" "CMakeFiles/cantidad_letras.dir/src/cantidad_letras.cpp.o.d"
+  "/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante/src/dictionary.cpp" "CMakeFiles/cantidad_letras.dir/src/dictionary.cpp.o" "gcc" "CMakeFiles/cantidad_letras.dir/src/dictionary.cpp.o.d"
+  "/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante/src/letters_set.cpp" "CMakeFiles/cantidad_letras.dir/src/letters_set.cpp.o" "gcc" "CMakeFiles/cantidad_letras.dir/src/letters_set.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

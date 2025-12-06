@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante
+CMAKE_SOURCE_DIR = "/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante
+CMAKE_BINARY_DIR = "/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/CMakeFiles /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante/CMakeFiles" "/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante//CMakeFiles/progress.marks"
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -206,6 +206,30 @@ zip: cmake_check_build_system
 zip/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/zip.dir/build.make CMakeFiles/zip.dir/build
 .PHONY : zip/fast
+
+src/arbolCifras.o: src/arbolCifras.cpp.o
+.PHONY : src/arbolCifras.o
+
+# target to build an object file
+src/arbolCifras.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cifras.dir/build.make CMakeFiles/cifras.dir/src/arbolCifras.cpp.o
+.PHONY : src/arbolCifras.cpp.o
+
+src/arbolCifras.i: src/arbolCifras.cpp.i
+.PHONY : src/arbolCifras.i
+
+# target to preprocess a source file
+src/arbolCifras.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cifras.dir/build.make CMakeFiles/cifras.dir/src/arbolCifras.cpp.i
+.PHONY : src/arbolCifras.cpp.i
+
+src/arbolCifras.s: src/arbolCifras.cpp.s
+.PHONY : src/arbolCifras.s
+
+# target to generate assembly for a file
+src/arbolCifras.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cifras.dir/build.make CMakeFiles/cifras.dir/src/arbolCifras.cpp.s
+.PHONY : src/arbolCifras.cpp.s
 
 src/cantidad_letras.o: src/cantidad_letras.cpp.o
 .PHONY : src/cantidad_letras.o
@@ -423,6 +447,9 @@ help:
 	@echo "... cifras"
 	@echo "... letras"
 	@echo "... testdiccionario"
+	@echo "... src/arbolCifras.o"
+	@echo "... src/arbolCifras.i"
+	@echo "... src/arbolCifras.s"
 	@echo "... src/cantidad_letras.o"
 	@echo "... src/cantidad_letras.i"
 	@echo "... src/cantidad_letras.s"

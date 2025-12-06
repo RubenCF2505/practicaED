@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante
+CMAKE_SOURCE_DIR = "/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante
+CMAKE_BINARY_DIR = "/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/cifras.dir/depend.make
@@ -72,28 +72,44 @@ include CMakeFiles/cifras.dir/flags.make
 CMakeFiles/cifras.dir/src/cifras.cpp.o: CMakeFiles/cifras.dir/flags.make
 CMakeFiles/cifras.dir/src/cifras.cpp.o: src/cifras.cpp
 CMakeFiles/cifras.dir/src/cifras.cpp.o: CMakeFiles/cifras.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/cifras.dir/src/cifras.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cifras.dir/src/cifras.cpp.o -MF CMakeFiles/cifras.dir/src/cifras.cpp.o.d -o CMakeFiles/cifras.dir/src/cifras.cpp.o -c /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/src/cifras.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/cifras.dir/src/cifras.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cifras.dir/src/cifras.cpp.o -MF CMakeFiles/cifras.dir/src/cifras.cpp.o.d -o CMakeFiles/cifras.dir/src/cifras.cpp.o -c "/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante/src/cifras.cpp"
 
 CMakeFiles/cifras.dir/src/cifras.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cifras.dir/src/cifras.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/src/cifras.cpp > CMakeFiles/cifras.dir/src/cifras.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante/src/cifras.cpp" > CMakeFiles/cifras.dir/src/cifras.cpp.i
 
 CMakeFiles/cifras.dir/src/cifras.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cifras.dir/src/cifras.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/src/cifras.cpp -o CMakeFiles/cifras.dir/src/cifras.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante/src/cifras.cpp" -o CMakeFiles/cifras.dir/src/cifras.cpp.s
+
+CMakeFiles/cifras.dir/src/arbolCifras.cpp.o: CMakeFiles/cifras.dir/flags.make
+CMakeFiles/cifras.dir/src/arbolCifras.cpp.o: src/arbolCifras.cpp
+CMakeFiles/cifras.dir/src/arbolCifras.cpp.o: CMakeFiles/cifras.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/cifras.dir/src/arbolCifras.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cifras.dir/src/arbolCifras.cpp.o -MF CMakeFiles/cifras.dir/src/arbolCifras.cpp.o.d -o CMakeFiles/cifras.dir/src/arbolCifras.cpp.o -c "/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante/src/arbolCifras.cpp"
+
+CMakeFiles/cifras.dir/src/arbolCifras.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cifras.dir/src/arbolCifras.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante/src/arbolCifras.cpp" > CMakeFiles/cifras.dir/src/arbolCifras.cpp.i
+
+CMakeFiles/cifras.dir/src/arbolCifras.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cifras.dir/src/arbolCifras.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante/src/arbolCifras.cpp" -o CMakeFiles/cifras.dir/src/arbolCifras.cpp.s
 
 # Object files for target cifras
 cifras_OBJECTS = \
-"CMakeFiles/cifras.dir/src/cifras.cpp.o"
+"CMakeFiles/cifras.dir/src/cifras.cpp.o" \
+"CMakeFiles/cifras.dir/src/arbolCifras.cpp.o"
 
 # External object files for target cifras
 cifras_EXTERNAL_OBJECTS =
 
 bin/cifras: CMakeFiles/cifras.dir/src/cifras.cpp.o
+bin/cifras: CMakeFiles/cifras.dir/src/arbolCifras.cpp.o
 bin/cifras: CMakeFiles/cifras.dir/build.make
 bin/cifras: CMakeFiles/cifras.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable bin/cifras"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable bin/cifras"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cifras.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -105,6 +121,6 @@ CMakeFiles/cifras.dir/clean:
 .PHONY : CMakeFiles/cifras.dir/clean
 
 CMakeFiles/cifras.dir/depend:
-	cd /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/CMakeFiles/cifras.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd "/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante" "/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante" "/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante" "/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante" "/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante/CMakeFiles/cifras.dir/DependInfo.cmake" "--color=$(COLOR)"
 .PHONY : CMakeFiles/cifras.dir/depend
 

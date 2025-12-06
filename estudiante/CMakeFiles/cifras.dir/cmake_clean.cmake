@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/cifras.dir/src/arbolCifras.cpp.o"
+  "CMakeFiles/cifras.dir/src/arbolCifras.cpp.o.d"
   "CMakeFiles/cifras.dir/src/cifras.cpp.o"
   "CMakeFiles/cifras.dir/src/cifras.cpp.o.d"
   "bin/cifras"

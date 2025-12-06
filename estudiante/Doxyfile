@@ -1,6 +1,6 @@
 PROJECT_NAME           = "Práctica Final.-Cifras y Letras "
-OUTPUT_DIRECTORY       = /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/doc_doxygen/
-INPUT                  = /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/.//include /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/.//src /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/.//doc
+OUTPUT_DIRECTORY       = /home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante/doc_doxygen/
+INPUT                  = /home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante/.//include /home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante/.//src /home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante/.//doc
 GENERATE_LATEX         = NO
-IMAGE_PATH             = /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/.//doc
+IMAGE_PATH             = /home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante/.//doc
 EXTRACT_PRIVATE	       = NO

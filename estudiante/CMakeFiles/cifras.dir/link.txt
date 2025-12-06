@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/cifras.dir/src/cifras.cpp.o -o bin/cifras 
+/usr/bin/c++ CMakeFiles/cifras.dir/src/cifras.cpp.o CMakeFiles/cifras.dir/src/arbolCifras.cpp.o -o bin/cifras 

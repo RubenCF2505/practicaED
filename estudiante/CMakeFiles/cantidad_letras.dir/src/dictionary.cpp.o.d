@@ -1,7 +1,7 @@
 CMakeFiles/cantidad_letras.dir/src/dictionary.cpp.o: \
- /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/src/dictionary.cpp \
+ /home/ruben/Documentos/ugr/prácticas\ ED/practicaFinal/estudiante/src/dictionary.cpp \
  /usr/include/stdc-predef.h \
- /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/./include/dictionary.h \
+ /home/ruben/Documentos/ugr/prácticas\ ED/practicaFinal/estudiante/./include/dictionary.h \
  /usr/include/c++/13/string /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \

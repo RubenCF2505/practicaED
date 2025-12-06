@@ -31,7 +31,8 @@ if (EXISTS ${CMAKE_SOURCE_DIR}/${BASE_FOLDER}/src/cantidad_letras.cpp)
 endif()
 if (EXISTS ${CMAKE_SOURCE_DIR}/${BASE_FOLDER}/src/cifras.cpp)
   add_executable(cifras
-    ${BASE_FOLDER}/src/cifras.cpp)
+    ${BASE_FOLDER}/src/cifras.cpp
+    ${BASE_FOLDER}/src/arbolCifras.cpp)
 endif()
 
 

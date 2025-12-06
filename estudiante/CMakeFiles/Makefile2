@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante
+CMAKE_SOURCE_DIR = "/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante
+CMAKE_BINARY_DIR = "/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante"
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -90,14 +90,14 @@ clean: CMakeFiles/zip.dir/clean
 CMakeFiles/testdiccionario.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testdiccionario.dir/build.make CMakeFiles/testdiccionario.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testdiccionario.dir/build.make CMakeFiles/testdiccionario.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/CMakeFiles --progress-num=14,15,16 "Built target testdiccionario"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante/CMakeFiles" --progress-num=15,16,17 "Built target testdiccionario"
 .PHONY : CMakeFiles/testdiccionario.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/testdiccionario.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante/CMakeFiles" 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/testdiccionario.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante/CMakeFiles" 0
 .PHONY : CMakeFiles/testdiccionario.dir/rule
 
 # Convenience name for target.
@@ -116,14 +116,14 @@ CMakeFiles/testdiccionario.dir/clean:
 CMakeFiles/letras.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/letras.dir/build.make CMakeFiles/letras.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/letras.dir/build.make CMakeFiles/letras.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/CMakeFiles --progress-num=8,9,10,11,12,13 "Built target letras"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante/CMakeFiles" --progress-num=9,10,11,12,13,14 "Built target letras"
 .PHONY : CMakeFiles/letras.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/letras.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante/CMakeFiles" 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/letras.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante/CMakeFiles" 0
 .PHONY : CMakeFiles/letras.dir/rule
 
 # Convenience name for target.
@@ -142,14 +142,14 @@ CMakeFiles/letras.dir/clean:
 CMakeFiles/cantidad_letras.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cantidad_letras.dir/build.make CMakeFiles/cantidad_letras.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cantidad_letras.dir/build.make CMakeFiles/cantidad_letras.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/CMakeFiles --progress-num=1,2,3,4 "Built target cantidad_letras"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante/CMakeFiles" --progress-num=1,2,3,4 "Built target cantidad_letras"
 .PHONY : CMakeFiles/cantidad_letras.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/cantidad_letras.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante/CMakeFiles" 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/cantidad_letras.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante/CMakeFiles" 0
 .PHONY : CMakeFiles/cantidad_letras.dir/rule
 
 # Convenience name for target.
@@ -168,14 +168,14 @@ CMakeFiles/cantidad_letras.dir/clean:
 CMakeFiles/cifras.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cifras.dir/build.make CMakeFiles/cifras.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cifras.dir/build.make CMakeFiles/cifras.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/CMakeFiles --progress-num=5,6 "Built target cifras"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante/CMakeFiles" --progress-num=5,6,7 "Built target cifras"
 .PHONY : CMakeFiles/cifras.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/cifras.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante/CMakeFiles" 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/cifras.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante/CMakeFiles" 0
 .PHONY : CMakeFiles/cifras.dir/rule
 
 # Convenience name for target.
@@ -194,14 +194,14 @@ CMakeFiles/cifras.dir/clean:
 CMakeFiles/doc_doxygen.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/doc_doxygen.dir/build.make CMakeFiles/doc_doxygen.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/doc_doxygen.dir/build.make CMakeFiles/doc_doxygen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/CMakeFiles --progress-num=7 "Built target doc_doxygen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante/CMakeFiles" --progress-num=8 "Built target doc_doxygen"
 .PHONY : CMakeFiles/doc_doxygen.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/doc_doxygen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante/CMakeFiles" 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/doc_doxygen.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante/CMakeFiles" 0
 .PHONY : CMakeFiles/doc_doxygen.dir/rule
 
 # Convenience name for target.
@@ -220,14 +220,14 @@ CMakeFiles/doc_doxygen.dir/clean:
 CMakeFiles/mrproper.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mrproper.dir/build.make CMakeFiles/mrproper.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mrproper.dir/build.make CMakeFiles/mrproper.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/CMakeFiles --progress-num= "Built target mrproper"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante/CMakeFiles" --progress-num= "Built target mrproper"
 .PHONY : CMakeFiles/mrproper.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/mrproper.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante/CMakeFiles" 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/mrproper.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante/CMakeFiles" 0
 .PHONY : CMakeFiles/mrproper.dir/rule
 
 # Convenience name for target.
@@ -246,14 +246,14 @@ CMakeFiles/mrproper.dir/clean:
 CMakeFiles/zip.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/zip.dir/build.make CMakeFiles/zip.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/zip.dir/build.make CMakeFiles/zip.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/CMakeFiles --progress-num=17 "Built target zip"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante/CMakeFiles" --progress-num=18 "Built target zip"
 .PHONY : CMakeFiles/zip.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/zip.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante/CMakeFiles" 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/zip.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante/CMakeFiles" 0
 .PHONY : CMakeFiles/zip.dir/rule
 
 # Convenience name for target.

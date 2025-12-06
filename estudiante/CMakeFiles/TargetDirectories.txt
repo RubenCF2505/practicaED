@@ -1,9 +1,9 @@
-/mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/CMakeFiles/testdiccionario.dir
-/mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/CMakeFiles/letras.dir
-/mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/CMakeFiles/cantidad_letras.dir
-/mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/CMakeFiles/cifras.dir
-/mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/CMakeFiles/doc_doxygen.dir
-/mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/CMakeFiles/mrproper.dir
-/mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/CMakeFiles/zip.dir
-/mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/CMakeFiles/edit_cache.dir
-/mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/CMakeFiles/rebuild_cache.dir
+/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante/CMakeFiles/testdiccionario.dir
+/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante/CMakeFiles/letras.dir
+/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante/CMakeFiles/cantidad_letras.dir
+/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante/CMakeFiles/cifras.dir
+/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante/CMakeFiles/doc_doxygen.dir
+/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante/CMakeFiles/mrproper.dir
+/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante/CMakeFiles/zip.dir
+/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante/CMakeFiles/edit_cache.dir
+/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante/CMakeFiles/rebuild_cache.dir

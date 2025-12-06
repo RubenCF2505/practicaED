@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante
+CMAKE_SOURCE_DIR = "/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante
+CMAKE_BINARY_DIR = "/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/letras.dir/depend.make
@@ -72,72 +72,72 @@ include CMakeFiles/letras.dir/flags.make
 CMakeFiles/letras.dir/src/letras.cpp.o: CMakeFiles/letras.dir/flags.make
 CMakeFiles/letras.dir/src/letras.cpp.o: src/letras.cpp
 CMakeFiles/letras.dir/src/letras.cpp.o: CMakeFiles/letras.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/letras.dir/src/letras.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/letras.dir/src/letras.cpp.o -MF CMakeFiles/letras.dir/src/letras.cpp.o.d -o CMakeFiles/letras.dir/src/letras.cpp.o -c /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/src/letras.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/letras.dir/src/letras.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/letras.dir/src/letras.cpp.o -MF CMakeFiles/letras.dir/src/letras.cpp.o.d -o CMakeFiles/letras.dir/src/letras.cpp.o -c "/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante/src/letras.cpp"
 
 CMakeFiles/letras.dir/src/letras.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/letras.dir/src/letras.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/src/letras.cpp > CMakeFiles/letras.dir/src/letras.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante/src/letras.cpp" > CMakeFiles/letras.dir/src/letras.cpp.i
 
 CMakeFiles/letras.dir/src/letras.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/letras.dir/src/letras.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/src/letras.cpp -o CMakeFiles/letras.dir/src/letras.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante/src/letras.cpp" -o CMakeFiles/letras.dir/src/letras.cpp.s
 
 CMakeFiles/letras.dir/src/letters_set.cpp.o: CMakeFiles/letras.dir/flags.make
 CMakeFiles/letras.dir/src/letters_set.cpp.o: src/letters_set.cpp
 CMakeFiles/letras.dir/src/letters_set.cpp.o: CMakeFiles/letras.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/letras.dir/src/letters_set.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/letras.dir/src/letters_set.cpp.o -MF CMakeFiles/letras.dir/src/letters_set.cpp.o.d -o CMakeFiles/letras.dir/src/letters_set.cpp.o -c /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/src/letters_set.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/letras.dir/src/letters_set.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/letras.dir/src/letters_set.cpp.o -MF CMakeFiles/letras.dir/src/letters_set.cpp.o.d -o CMakeFiles/letras.dir/src/letters_set.cpp.o -c "/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante/src/letters_set.cpp"
 
 CMakeFiles/letras.dir/src/letters_set.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/letras.dir/src/letters_set.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/src/letters_set.cpp > CMakeFiles/letras.dir/src/letters_set.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante/src/letters_set.cpp" > CMakeFiles/letras.dir/src/letters_set.cpp.i
 
 CMakeFiles/letras.dir/src/letters_set.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/letras.dir/src/letters_set.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/src/letters_set.cpp -o CMakeFiles/letras.dir/src/letters_set.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante/src/letters_set.cpp" -o CMakeFiles/letras.dir/src/letters_set.cpp.s
 
 CMakeFiles/letras.dir/src/letters_bag.cpp.o: CMakeFiles/letras.dir/flags.make
 CMakeFiles/letras.dir/src/letters_bag.cpp.o: src/letters_bag.cpp
 CMakeFiles/letras.dir/src/letters_bag.cpp.o: CMakeFiles/letras.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/letras.dir/src/letters_bag.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/letras.dir/src/letters_bag.cpp.o -MF CMakeFiles/letras.dir/src/letters_bag.cpp.o.d -o CMakeFiles/letras.dir/src/letters_bag.cpp.o -c /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/src/letters_bag.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/letras.dir/src/letters_bag.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/letras.dir/src/letters_bag.cpp.o -MF CMakeFiles/letras.dir/src/letters_bag.cpp.o.d -o CMakeFiles/letras.dir/src/letters_bag.cpp.o -c "/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante/src/letters_bag.cpp"
 
 CMakeFiles/letras.dir/src/letters_bag.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/letras.dir/src/letters_bag.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/src/letters_bag.cpp > CMakeFiles/letras.dir/src/letters_bag.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante/src/letters_bag.cpp" > CMakeFiles/letras.dir/src/letters_bag.cpp.i
 
 CMakeFiles/letras.dir/src/letters_bag.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/letras.dir/src/letters_bag.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/src/letters_bag.cpp -o CMakeFiles/letras.dir/src/letters_bag.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante/src/letters_bag.cpp" -o CMakeFiles/letras.dir/src/letters_bag.cpp.s
 
 CMakeFiles/letras.dir/src/solver.cpp.o: CMakeFiles/letras.dir/flags.make
 CMakeFiles/letras.dir/src/solver.cpp.o: src/solver.cpp
 CMakeFiles/letras.dir/src/solver.cpp.o: CMakeFiles/letras.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/letras.dir/src/solver.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/letras.dir/src/solver.cpp.o -MF CMakeFiles/letras.dir/src/solver.cpp.o.d -o CMakeFiles/letras.dir/src/solver.cpp.o -c /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/src/solver.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/letras.dir/src/solver.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/letras.dir/src/solver.cpp.o -MF CMakeFiles/letras.dir/src/solver.cpp.o.d -o CMakeFiles/letras.dir/src/solver.cpp.o -c "/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante/src/solver.cpp"
 
 CMakeFiles/letras.dir/src/solver.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/letras.dir/src/solver.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/src/solver.cpp > CMakeFiles/letras.dir/src/solver.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante/src/solver.cpp" > CMakeFiles/letras.dir/src/solver.cpp.i
 
 CMakeFiles/letras.dir/src/solver.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/letras.dir/src/solver.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/src/solver.cpp -o CMakeFiles/letras.dir/src/solver.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante/src/solver.cpp" -o CMakeFiles/letras.dir/src/solver.cpp.s
 
 CMakeFiles/letras.dir/src/dictionary.cpp.o: CMakeFiles/letras.dir/flags.make
 CMakeFiles/letras.dir/src/dictionary.cpp.o: src/dictionary.cpp
 CMakeFiles/letras.dir/src/dictionary.cpp.o: CMakeFiles/letras.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/letras.dir/src/dictionary.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/letras.dir/src/dictionary.cpp.o -MF CMakeFiles/letras.dir/src/dictionary.cpp.o.d -o CMakeFiles/letras.dir/src/dictionary.cpp.o -c /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/src/dictionary.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/letras.dir/src/dictionary.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/letras.dir/src/dictionary.cpp.o -MF CMakeFiles/letras.dir/src/dictionary.cpp.o.d -o CMakeFiles/letras.dir/src/dictionary.cpp.o -c "/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante/src/dictionary.cpp"
 
 CMakeFiles/letras.dir/src/dictionary.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/letras.dir/src/dictionary.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/src/dictionary.cpp > CMakeFiles/letras.dir/src/dictionary.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante/src/dictionary.cpp" > CMakeFiles/letras.dir/src/dictionary.cpp.i
 
 CMakeFiles/letras.dir/src/dictionary.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/letras.dir/src/dictionary.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/src/dictionary.cpp -o CMakeFiles/letras.dir/src/dictionary.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante/src/dictionary.cpp" -o CMakeFiles/letras.dir/src/dictionary.cpp.s
 
 # Object files for target letras
 letras_OBJECTS = \
@@ -157,7 +157,7 @@ bin/letras: CMakeFiles/letras.dir/src/solver.cpp.o
 bin/letras: CMakeFiles/letras.dir/src/dictionary.cpp.o
 bin/letras: CMakeFiles/letras.dir/build.make
 bin/letras: CMakeFiles/letras.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable bin/letras"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable bin/letras"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/letras.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -169,6 +169,6 @@ CMakeFiles/letras.dir/clean:
 .PHONY : CMakeFiles/letras.dir/clean
 
 CMakeFiles/letras.dir/depend:
-	cd /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/CMakeFiles/letras.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd "/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante" "/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante" "/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante" "/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante" "/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante/CMakeFiles/letras.dir/DependInfo.cmake" "--color=$(COLOR)"
 .PHONY : CMakeFiles/letras.dir/depend
 
