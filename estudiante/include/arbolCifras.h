@@ -30,9 +30,7 @@ public:
     bool combinacionMagica();
 private:
     nodo *crearNodo(nodo *padre, int operador1, int operador2, char signo, multiset<int> numeros);
-
     nodo *raiz;
-    set<int> hojas;
     vector<nodo *> soluciones;
 };
 

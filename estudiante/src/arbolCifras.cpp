@@ -23,6 +23,20 @@ ArbolCifras::ArbolCifras(multiset<int> numeros, int objetivo)
 
     generarSolucion(raiz, objetivo);
 }
+bool buscarValor(int valor, vector<ArbolCifras::nodo *> lista)
+{
+    bool encontrado = false;
+    auto it = lista.begin();
+    while (it != lista.end() && !encontrado)
+    {
+        if ((*it)->etiqueta == valor)
+        {
+            encontrado = true;
+        }
+        it++;
+    }
+    return encontrado;
+}
 
 bool comprobarOperacion(int operador1, int operador2, char signo)
 {
@@ -76,9 +90,8 @@ void ArbolCifras::generarSolucion(nodo *actual, int objetivo)
 
                                 if (hijo->etiqueta >= 100 && hijo->etiqueta <= 999)
                                 {
-                                    if (hojas.find(hijo->etiqueta) == hojas.end())
+                                    if (!buscarValor(hijo->etiqueta, soluciones))
                                     {
-                                        hojas.insert(hijo->etiqueta);
                                         soluciones.push_back(hijo);
                                     }
                                 }
