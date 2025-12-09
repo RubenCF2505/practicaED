@@ -51,7 +51,7 @@ public:
      * @return Cadena que representa el camino de la solución,
      * o cadena vacía si no se encuentra solución desde ese nodo.
      */
-    string generarSolucion(nodo *actual, int objetivo);
+    void generarSolucion(nodo *actual, int objetivo);
 
     /**
      * @brief Devuelve la lista de nodos que representan soluciones válidas.
@@ -80,6 +80,7 @@ public:
      * @return `true` si es una combinación mágica, `false` en caso contrario.
      */
     bool combinacionMagica();
+
 
 private:
     /**
