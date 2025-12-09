@@ -1,9 +1,0 @@
-/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante/CMakeFiles/testdiccionario.dir
-/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante/CMakeFiles/letras.dir
-/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante/CMakeFiles/cantidad_letras.dir
-/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante/CMakeFiles/cifras.dir
-/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante/CMakeFiles/doc_doxygen.dir
-/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante/CMakeFiles/mrproper.dir
-/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante/CMakeFiles/zip.dir
-/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante/CMakeFiles/edit_cache.dir
-/home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante/CMakeFiles/rebuild_cache.dir
