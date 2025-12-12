@@ -1,0 +1,66 @@
+/**
+ @mainpage Práctica ED — Juego de Letras (Documentación)
+
+ @section intro Introducción
+Este proyecto implementa un juego de letras (tipo Scrabble) con las siguientes responsabilidades:
+
+- Gestión de un diccionario de palabras válidas.
+- Definición del conjunto de letras y sus puntuaciones.
+- Bolsa de letras que permite extraer letras aleatoriamente.
+- Motor (`Solver`) que calcula las mejores soluciones dadas las letras disponibles.
+- Aplicación de consola que orquesta la partida (`letras`).
+
+@section estructura Estructura del repositorio
+
+- Directorio `include/`: cabeceras públicas de los módulos.
+- Directorio `src/`: implementación en C++ de los módulos.
+- Directorio `data/`: ficheros de diccionarios y definición de letras.
+- Directorio `doc/`: documentación adicional y este `mainpage.dox`.
+
+@section modulos Módulos principales
+
+ - @b Dictionary: lectura y gestión del diccionario de palabras.
+   - Archivos: include/dictionary.h, src/dictionary.cpp
+
+ - @b LettersSet: describe las letras disponibles y la puntuación por letra.
+   - Archivos: include/letters_set.h, src/letters_set.cpp
+
+ - @b LettersBag: bolsa de letras con extracción aleatoria.
+   - Archivos: include/letters_bag.h, src/letters_bag.cpp
+
+ - @b Solver: lógica para validar palabras y buscar soluciones óptimas.
+   - Archivos: include/solver.h, src/solver.cpp
+
+ - @b Aplicación: ejecutable de consola que inicia partidas.
+   - Archivo: src/letras.cpp (bin/letras)
+
+@section uso Uso rápido
+Compilar el proyecto (desde la carpeta `estudiante`):
+
+```
+make -j4
+```
+
+Ejecutar la aplicación de ejemplo:
+
+```
+./bin/letras ./data/diccionario.txt ./data/letras.txt 8 L
+```
+
+@section generar Generar documentación (Doxygen)
+Si el `Doxyfile` ya está en el proyecto puedes ejecutar la tarea correspondiente (Makefile):
+
+```
+make doc_doxygen
+```
+
+Tras generarla, abre `doc_doxygen/html/index.html` o el `html/index.html` que cree tu sistema de build.
+
+@section notas Notas y recomendaciones
+- Añade comentarios Doxygen (`/** ... */`, `@param`, `@return`) a las cabeceras en `include/` para que la documentación incluya descripciones de clases y métodos.
+- Incluye ejemplos cortos en las cabeceras públicas para que Doxygen los muestre.
+
+@section autores Autores
+Práctica de Estructura de Datos — Repositorio de ejemplo
+
+*/
