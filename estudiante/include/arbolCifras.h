@@ -36,7 +36,7 @@ public:
      * Construye el árbol generando todas las combinaciones posibles
      * mediante operaciones entre los números.
      */
-    ArbolCifras(multiset<int> numeros, int objetivo);
+    ArbolCifras(multiset<int> numeros);
 
     /**
      * @brief Genera de manera recursiva las posibles soluciones del árbol.
@@ -51,14 +51,14 @@ public:
      * @return Cadena que representa el camino de la solución,
      * o cadena vacía si no se encuentra solución desde ese nodo.
      */
-    void generarSolucion(nodo *actual, int objetivo);
+    void generarSolucion(nodo *actual);
 
     /**
      * @brief Devuelve la lista de nodos que representan soluciones válidas.
      *
      * @return Referencia al vector de nodos solución.
      */
-    vector<nodo *> &getSoluciones();
+    set<nodo *> &getSoluciones();
 
     /**
      * @brief Devuelve los pasos necesarios para alcanzar un objetivo concreto.
@@ -115,7 +115,7 @@ private:
     /**
      * @brief Lista de nodos que representan soluciones encontradas.
      */
-    vector<nodo *> soluciones;
+    set<nodo *> soluciones;
 };
 
 #endif

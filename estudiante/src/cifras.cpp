@@ -45,22 +45,42 @@ public:
                 return true;
         return false;
     }
+    ArbolCifras::nodo *buscarNodo(int numero)
+    {
+        ArbolCifras::nodo *resultado;
+        for (ArbolCifras::nodo *nodo : soluciones.getSoluciones())
+        {
+            if (nodo->etiqueta == numero)
+            {
+                resultado = nodo;
+            }
+        }
+        return resultado;
+    }
 
     int buscarSolucionCercana(int objetivo)
     {
-        
-        int solucionCercana = soluciones.getSoluciones().front()->etiqueta;
-        int restoActual = solucionCercana - objetivo >= 0 ? solucionCercana - objetivo : objetivo - solucionCercana;
-
-        for (ArbolCifras::nodo *nodo : soluciones.getSoluciones())
+        ArbolCifras ::nodo *nodo;
+        bool encontradoAbajo = false;
+        bool encontradoArriba=false;
+        int resto = 1;
+        while (!encontradoAbajo&& !encontradoArriba)
         {
-            int restoNuevo = nodo->etiqueta - objetivo >= 0 ? nodo->etiqueta - objetivo : objetivo - nodo->etiqueta;
-            if (restoNuevo < restoActual)
-            {
-                restoActual = restoNuevo;
-                solucionCercana = nodo->etiqueta;
+            
+            encontradoAbajo=buscarNodo(objetivo-resto)->etiqueta==objetivo-resto;
+            encontradoArriba=buscarNodo(objetivo+resto)->etiqueta==objetivo+resto;
+            resto++;
+            if(encontradoAbajo){
+                nodo=buscarNodo(objetivo-resto);
+            }else{
+                nodo=buscarNodo(objetivo+resto);
+                
             }
         }
+
+        int solucionCercana= nodo->etiqueta;
+
+        
         return solucionCercana;
     }
 
@@ -73,7 +93,7 @@ public:
     }
     void generarSoluciones()
     {
-        soluciones = ArbolCifras(numeros, numero);
+        soluciones = ArbolCifras(numeros);
     }
 
     bool comprobarSolucionMagica()

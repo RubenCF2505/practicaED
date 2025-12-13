@@ -1,6 +1,0 @@
-PROJECT_NAME           = "Práctica Final.-Cifras y Letras "
-OUTPUT_DIRECTORY       = /home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante/doc_doxygen/
-INPUT                  = /home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante/.//include /home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante/.//src /home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante/.//doc
-GENERATE_LATEX         = NO
-IMAGE_PATH             = /home/ruben/Documentos/ugr/prácticas ED/practicaFinal/estudiante/.//doc
-EXTRACT_PRIVATE	       = NO

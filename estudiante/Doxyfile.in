@@ -1,6 +1,13 @@
-PROJECT_NAME           = "Práctica Final.-Cifras y Letras "
+PROJECT_NAME           = "Práctica Final - Cifras y Letras"
 OUTPUT_DIRECTORY       = @CMAKE_CURRENT_BINARY_DIR@/doc_doxygen/
-INPUT                  = @CMAKE_SOURCE_DIR@/@BASE_FOLDER@/include @CMAKE_SOURCE_DIR@/@BASE_FOLDER@/src @CMAKE_SOURCE_DIR@/@BASE_FOLDER@/doc
+
+INPUT                  = @CMAKE_SOURCE_DIR@/include \
+                         @CMAKE_SOURCE_DIR@/src \
+                         @CMAKE_SOURCE_DIR@/doc
+
+IMAGE_PATH             = @CMAKE_SOURCE_DIR@/doc
 GENERATE_LATEX         = NO
-IMAGE_PATH             = @CMAKE_SOURCE_DIR@/@BASE_FOLDER@/doc
-EXTRACT_PRIVATE	       = NO
+EXTRACT_PRIVATE        = NO
+RECURSIVE              = YES
+GENERATE_HTML          = YES
+
