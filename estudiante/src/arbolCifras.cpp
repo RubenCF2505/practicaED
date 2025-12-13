@@ -7,7 +7,7 @@ ArbolCifras::ArbolCifras()
     raiz->etiqueta = 0;
 }
 
-ArbolCifras::ArbolCifras(multiset<int> numeros, int objetivo)
+ArbolCifras::ArbolCifras(multiset<int> numeros)
 {
     raiz = new nodo;
     raiz->etiqueta = 0;
@@ -21,9 +21,9 @@ ArbolCifras::ArbolCifras(multiset<int> numeros, int objetivo)
         raiz->hijos.push_back(nodoHijo);
     }
 
-    generarSolucion(raiz, objetivo);
+    generarSolucion(raiz);
 }
-bool buscarValor(int valor, vector<ArbolCifras::nodo *> lista)
+bool buscarValor(int valor, set<ArbolCifras::nodo *> lista)
 {
     bool encontrado = false;
     auto it = lista.begin();
@@ -45,11 +45,8 @@ bool comprobarOperacion(int operador1, int operador2, char signo)
         valida = false;
     if (signo == '/' && (operador2 == 0 || operador1 % operador2 != 0))
         valida = false;
-    if (signo == '/' && operador2 == 0)
-        valida = false;
     if (operador1 == 1 || operador2 == 1 && signo == '*')
         valida = false;
-
     if (operador2 == 1 && signo == '/')
         valida = false;
     if ((signo == '+' || signo == '*') && operador1 > operador2)
@@ -63,48 +60,43 @@ bool ArbolCifras::combinacionMagica()
     return soluciones.size() == 900;
 }
 
-void ArbolCifras::generarSolucion(nodo *actual, int objetivo)
+void ArbolCifras::generarSolucion(nodo *actual)
 {
     vector<char> signos = {'+', '-', '*', '/'};
     multiset<int> numeros = actual->numeros;
-    if (actual->etiqueta != objetivo)
+
+    if (numeros.size() > 1)
     {
-
-        if (numeros.size() > 1)
+        auto it1 = numeros.begin();
+        while (it1 != numeros.end())
         {
-            auto it1 = numeros.begin();
-            while (it1 != numeros.end())
+            auto it2 = numeros.begin();
+            while (it2 != numeros.end())
             {
-                auto it2 = numeros.begin();
-                while (it2 != numeros.end())
+                if (it1 != it2)
                 {
-                    if (it1 != it2)
+                    for (char signo : signos)
                     {
-                        for (char signo : signos)
+                        if (comprobarOperacion(*it1, *it2, signo))
                         {
-                            if (comprobarOperacion(*it1, *it2, signo))
+                            nodo *hijo = crearNodo(actual, *it1, *it2, signo, numeros);
+
+                            actual->hijos.push_back(hijo);
+
+                            if (hijo->etiqueta >= 100 && hijo->etiqueta <= 999)
                             {
-                                nodo *hijo = crearNodo(actual, *it1, *it2, signo, numeros);
 
-                                actual->hijos.push_back(hijo);
-
-                                if (hijo->etiqueta >= 100 && hijo->etiqueta <= 999)
-                                {
-                                    if (!buscarValor(hijo->etiqueta, soluciones))
-                                    {
-                                        soluciones.push_back(hijo);
-                                    }
-                                }
-                                generarSolucion(hijo, objetivo);
+                                soluciones.insert(hijo);
                             }
+                            generarSolucion(hijo);
                         }
                     }
-
-                    ++it2;
                 }
 
-                ++it1;
+                ++it2;
             }
+
+            ++it1;
         }
     }
 }
@@ -130,7 +122,7 @@ int ArbolCifras::operar(int operador1, int operador2, char signo)
     return resultado;
 }
 
-vector<ArbolCifras::nodo *> &ArbolCifras::getSoluciones()
+set<ArbolCifras::nodo *> &ArbolCifras::getSoluciones()
 {
     return soluciones;
 }
