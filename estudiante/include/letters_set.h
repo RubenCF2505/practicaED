@@ -44,7 +44,7 @@ class LettersSet
 private:
   map<char, LetterInfo> charSet;
 
-public
+public:
   /**
    * @brief Constructor por defecto.
    */
@@ -125,14 +125,17 @@ public
      * @brief Avanza el iterador.
      * @return Referencia al propio iterador incrementado.
      */
-    iterator &operator++() { ++it; return *this; }
+    iterator &operator++()
+    {
+      ++it;
+      return *this;
+    }
 
     bool operator==(const iterator &other) const { return it == other.it; }
     bool operator!=(const iterator &other) const { return it != other.it; }
 
     friend class LettersSet;
   };
-
 
   /**
    * @class LettersSet::const_iterator
@@ -158,14 +161,17 @@ public
      * @brief Avanza el iterador.
      * @return Referencia al propio iterador incrementado.
      */
-    const_iterator &operator++() { ++it; return *this; }
+    const_iterator &operator++()
+    {
+      ++it;
+      return *this;
+    }
 
     bool operator==(const const_iterator &other) const { return it == other.it; }
     bool operator!=(const const_iterator &other) const { return it != other.it; }
 
     friend class LettersSet;
   };
-
 
   /**
    * @brief Busca una letra en el conjunto.
@@ -194,7 +200,6 @@ public
    */
   const_iterator end() const;
 
-
   /**
    * @brief Calcula la puntuación de una palabra.
    * @param palabra Palabra a evaluar.
@@ -220,7 +225,6 @@ public
    * @param filename Nombre del fichero a leer.
    */
   void loadFromFile(string filename);
-
 
   /**
    * @brief Sobrecarga del operador de entrada.

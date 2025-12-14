@@ -1,23 +1,34 @@
 /**
- @mainpage Práctica ED — Juego de Letras (Documentación)
+ @mainpage Práctica Cifras y Letras
+
+ \image html prac_final.png
 
  @section intro Introducción
-Este proyecto implementa un juego de letras (tipo Scrabble) con las siguientes responsabilidades:
+Este proyecto implementa ambos juegos usados en el programa de televisión española "Cifras y Letras" con las siguientes responsabilidades:
 
+- Un buscador de soluciones para el juego de cifras (mediante árboles).
 - Gestión de un diccionario de palabras válidas.
 - Definición del conjunto de letras y sus puntuaciones.
 - Bolsa de letras que permite extraer letras aleatoriamente.
-- Motor (`Solver`) que calcula las mejores soluciones dadas las letras disponibles.
-- Aplicación de consola que orquesta la partida (`letras`).
+- "Solver" que calcula las mejores soluciones dadas las letras disponibles.
+- Aplicación de consola que orquesta la partida (tanto las "cifras" como las "letras").
+
+La explicación en profundidad de las soluciones implementadas en ambos juegos está en el archivo de README dentro de la carpeta estudiante/doc.
 
 @section estructura Estructura del repositorio
 
-- Directorio `include/`: cabeceras públicas de los módulos.
-- Directorio `src/`: implementación en C++ de los módulos.
-- Directorio `data/`: ficheros de diccionarios y definición de letras.
-- Directorio `doc/`: documentación adicional y este `mainpage.dox`.
+El proyecto se divide en la siguiente estructura de carpetas:
+- Directorio "include/": cabeceras públicas de los módulos.
+- Directorio "src/": implementación en C++ de los módulos.
+- Directorio "data/": ficheros de diccionarios y definición de letras.
+- Directorio "doc/": documentación adicional como el "readme" con una memoria de la práctica o este "mainpage.dox".
 
 @section modulos Módulos principales
+ - @b ArbolCifras: administra un arbol de cifras que busca la solución de su juego.
+   - Archivos: include/arbolCifras.h, src/arbolCifras.cpp
+
+ - @b Aplicación: ejecutable de consola que inicia partida de "cifras".
+   - Archivos: src/cifras.cpp (bin/cifras)
 
  - @b Dictionary: lectura y gestión del diccionario de palabras.
    - Archivos: include/dictionary.h, src/dictionary.cpp
@@ -31,36 +42,24 @@ Este proyecto implementa un juego de letras (tipo Scrabble) con las siguientes r
  - @b Solver: lógica para validar palabras y buscar soluciones óptimas.
    - Archivos: include/solver.h, src/solver.cpp
 
- - @b Aplicación: ejecutable de consola que inicia partidas.
+ - @b Aplicación: ejecutable de consola que inicia partida de "letras".
    - Archivo: src/letras.cpp (bin/letras)
 
-@section uso Uso rápido
-Compilar el proyecto (desde la carpeta `estudiante`):
+@section uso Compilación del proyecto
+Desde la carpeta "estudiante", podrás ejecutar estos distintos comandos:
 
-```
-make -j4
-```
+- **cmake CMakeLists.txt** : Genera los archivos Makelist y Doxyfile necesarios para compilar el proyecto.
+- **make doc_doxygen** : Genera los archivos del Doxygen del proyecto.
+- **make** : Compila todos los ejecutables con los componentes necesarios (también compila el Doxyfile).
 
-Ejecutar la aplicación de ejemplo:
-
-```
-./bin/letras ./data/diccionario.txt ./data/letras.txt 8 L
-```
-
-@section generar Generar documentación (Doxygen)
-Si el `Doxyfile` ya está en el proyecto puedes ejecutar la tarea correspondiente (Makefile):
-
-```
-make doc_doxygen
-```
-
-Tras generarla, abre `doc_doxygen/html/index.html` o el `html/index.html` que cree tu sistema de build.
-
-@section notas Notas y recomendaciones
-- Añade comentarios Doxygen (`/** ... */`, `@param`, `@return`) a las cabeceras en `include/` para que la documentación incluya descripciones de clases y métodos.
-- Incluye ejemplos cortos en las cabeceras públicas para que Doxygen los muestre.
+Una vez se compilan los archivos, se puede ejecutar ambos ejecutables con estas ordenes:
+- Para cifras: ./bin/cifras (no necesita más argumentos)
+- Para letras: ./bin/letras ./data/diccionario.txt ./data/letras.txt 8 L
+    (Tiene este formato: [ejecutable] [archivo_diccionario] [archivo_letras] [numero_letras] [modo_juego(L:Longitud, P:Puntuacion)])
 
 @section autores Autores
-Práctica de Estructura de Datos — Repositorio de ejemplo
+Proyecto llevado a cabo por:
+- Darío Gómez Cisneros
+- Rubén Callejas Fernández
 
 */

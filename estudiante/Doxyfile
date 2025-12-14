@@ -1,6 +1,13 @@
-PROJECT_NAME           = "Práctica Final.-Cifras y Letras "
+PROJECT_NAME           = "Práctica Final - Cifras y Letras"
 OUTPUT_DIRECTORY       = /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/doc_doxygen/
-INPUT                  = /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/.//include /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/.//src /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/.//doc
+
+INPUT                  = /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/include \
+                         /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/src \
+                         /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/doc
+
+IMAGE_PATH             = /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/doc
 GENERATE_LATEX         = NO
-IMAGE_PATH             = /mnt/c/Users/inten/Documents/GitHub/practicaED/estudiante/.//doc
-EXTRACT_PRIVATE	       = NO
+EXTRACT_PRIVATE        = NO
+RECURSIVE              = YES
+GENERATE_HTML          = YES
+
